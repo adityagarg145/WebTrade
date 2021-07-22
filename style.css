@@ -1,0 +1,11 @@
+*{
+			margin: 0px;
+		  padding: 0px;
+		  font-family: Century Gothic;
+		}
+         header{
+         	background-image: url(weback.jpg);
+         	height: 100vh;
+         	background-size: cover;
+         	background-position: center;
+         }

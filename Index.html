@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="logo.png"type="image/png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+	<title>WEBTRADE</title>
+	<style>*{
+			margin: 0px;
+		  padding: 0px;
+		  font-family: Century Gothic;
+		}
+         header{
+               background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(webback.jpeg);
+         	height: 100vh;
+         	background-size: cover;
+         	background-position: center;
+         }
+         ul{
+         	list-style-type: none;
+            float: right;
+            margin-top: -130px;
+            }
+         ul li{
+               display: inline-block;
+              }
+         ul li a{
+         	    text-decoration: none;
+         	    color: #fff;
+         	    padding: 5px 20px;
+         	    border: 1px solid transparent;
+         	    transition: 0.6s ease;
+         	    border-radius: 5px;
+         }
+         ul li a:hover{
+         	          background-color: #fff;
+         	          color: #000;
+         }
+         ul li.active a{
+         	           background-color: #fff;
+         	          color: #000;
+         }
+         .logo img{
+         	      margin-left: 20px;
+         	      margin-top: 20px;
+         	      width: 175px;
+         	      height: auto;
+         }
+         .main{
+         	   max-width: 1200px;
+         	   margin-right: 40px;
+         }
+         .title{
+         	   position: absolute;
+         	   top: 50%;
+         	   left: 50%;
+         	   transform: translate(-50%,-50%);
+         }
+         .title h1{
+                  font-size: 70px;
+                  font-family: 'Akronim', cursive;
+         }
+         .button{
+         	    position: absolute;
+         	   top: 62%;
+         	   left: 50%;
+         	   transform: translate(-50%,-50%);
+         }
+         .btn{
+         	 border: 1px solid #fff;
+         	 padding: 10px 30px;
+         	 color: #fff;
+         	 text-decoration: none;
+         	 border-radius: 5px;
+         	 transition: 0.6s ease;
+         }
+         .btn:hover{
+         	       background-color: #fff;
+         	       color: #000;
+         }
+         .sale{
+         	  text-align:center ;
+         	  font-family: cursive;
+         	  font-size: 45px;
+         }
+         .info{
+         	  text-align: center;
+         	  font-family: monospace;
+         	  font-size: 25px;
+         }
+         .layout{
+         	    height: 400px;
+         	    width: 700px;
+         	    padding-left: 90px;
+         }
+         .webstart{
+                 padding-left: 150px;
+         }
+         .on{
+         	    height: 400px;
+         	    width: 700px;
+         	    padding-left: 90px;
+         	    padding-top: 80px;
+         }
+         .webstart1{
+                 padding-left: 150px;
+         }
+         .call{
+         	    height: 400px;
+         	    width: 700px;
+         	    padding-left: 90px;
+         	    padding-top: 80px;
+         }
+         .webstart2{
+                 padding-left: 150px;
+         }
+         .travel{
+         	 height: 400px;
+         	 width: 700px;
+                 padding-left: 90px;
+         	 padding-top: 80px;
+         }
+         .webstart3{
+                   padding-left: 150px;
+         }
+         .about{
+               height: 700px;
+               width: 1520px;
+         }
+         html{
+             scroll-behavior: smooth;
+         }
+         .con{
+             padding-left: 100px;
+         }
+         footer{
+               background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(feedback.png);
+               height: 110vh;
+               background-size: cover;
+               background-position: center;
+               opacity: 0.8;
+         }
+         .text-box{
+         	  background-color: #000;
+         	  border-width: 3px;
+         	  border-radius: 5px;
+         	  border-color: #000;
+         	  color: #fff;
+         	  margin-left: 150px;
+         	  margin-top: 80px;
+         	  height: 40px;
+         	  width: 300px;
+         	  text-align: center;
+         }
+         .text-box1{
+         	  background-color: #000;
+         	  border-width: 3px;
+         	  border-radius: 5px;
+         	  border-color: #000;
+         	  color: #fff;
+         	  margin-top: 80px;
+         	  height: 40px;
+         	  width: 300px;
+         	  margin-left: 30px;
+         	  text-align: center;
+         }
+         .area-box{
+         	  background-color: #000;
+         	  border-width: 3px;
+         	  border-radius: 8px;
+         	  border-color: #000;
+                  color: #fff;
+                  margin-left: 150px;
+                  margin-top: 50px;
+                  height: 300px;
+                  width: 650px;
+                  text-align: center;
+         }
+         .send-btn{
+         	  background-color: #000;
+         	  border-width: 3px;
+         	  border-radius: 5px;
+         	  border-color: #000;
+         	  margin-top: 50px;
+                  margin-left: 450px;
+                  height: 40px;
+                  width: 80px;
+                  color: #fff;
+                  text-align: center;
+         }
+     </style>
+</head>
+<body>
+<header>
+	<div>
+		<div class="logo">
+		<img src="webtrade.png">
+	    </div>
+		<ul class="main">
+			<li class="active">
+				<a href="#">HOME</a>
+			</li>
+			<li>
+				<a href="#buy">GALLERY</a>
+			</li>
+			<li>
+				<a href="#us">ABOUT US</a>
+			</li>
+			<li>
+				<a href="#tact">CONTACT</a>
+			</li>
+		</ul>
+	</div>
+	<div class="title">
+		<h1>WEBTRADE</h1>
+	</div>
+	<div class="button">
+	<a href="#us"class="btn">About Us</a>
+	<a href="#tact"class="btn">Contact Us</a>
+    </div>
+</header>
+<br/><br/>
+<main id="buy">
+	<div>
+		<p class="sale">
+			Buy your favourite website for sale!!!!!
+		</p><br/><br/>
+		<p class="info">The offer will be valid till 31/7/2021, Hurry up only few website left.</p>
+	</div>
+	<br/><br/><br/><br/><br/><br/><br/>
+	<table>
+		<tr>
+			<td>
+		<img src="layout.png" class="layout">
+	</td>
+	<td class="webstart">
+		This website is explaining about the layout of the website for begginers and<br/> as also used for learning. <br/><br/><img src="3.5.png" height="40px;"> 3.5☆ = <i><strike>$5 
+		</strike></i> <i> $</i>3 US DOLLER<br/><br/> To see the website <a href="https://adityagarg145.github.io/learning/layout.html">click here</a>
+	</td>
+</tr>
+<tr>
+	<td>
+		<img src="button.png" class="on">
+	</td>
+		<td class="webstart1">
+		 This website is containing some java script and <br/> a very helpful website for begginers to understand javascript and<br/> also use to make it as a home work<br/><br/>
+		 <img src="star.png" height="40px;"> 4.0☆ = <i><strike>$7 </strike></i><i> $</i>5 US DOLLER<br/><br/> To see the website <a href="https://adityagarg145.github.io/java-class/javahw.html">click here</a>
+	</td>
+</tr>
+<tr>
+	<td>
+		<img src="3call.png" class="call">
+	</td>
+	<td class="webstart2">
+		This website is containing a calculator and more javascript of<br/> every button containing
+		html 5, CSS , JAVA script<br/><br/><img src="star.png" height="40px"> 4.0☆ = <i><strike>$10 </strike></i><i> $</i>8 US DOLLER<br/><br/> To see the website <a href="https://adityagarg145.github.io/HOME/calculate.html">click here</a>
+   	</td>
+</tr>
+<tr>
+	<td>
+		<img src="4travel.png" class="travel">
+	</td>
+	<td class="webstart3">
+		This website is made using no java script but<br/> a travel website containing 25 places of india for travel.<br/><br/><img src="4.5.png" height="40px"> 4.5☆ = 
+		<i><strike>$15 </strike></i><i> $</i>13 US DOLLER<br/><br/> To see the website 
+		<a href="https://adityagarg145.github.io/Travel-every-where/Index.html">click here</a>
+	</td>
+</tr>
+</table>
+</main>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<section id="us">
+	<table>
+		<tr>
+			<td>
+	<p style="font-family: 'Zen Tokyo Zoo', cursive;
+	          font-size: 55px;
+	          padding-left: 150px;">About US</p>
+<br/>
+<br/>
+<p style="font-size: 25px;
+	  padding-left: 100px;">Get the help you need, every step of the way.</p>
+<br/>
+<br/>
+<p style="font-size: 20px;
+	  padding-left: 100px;">WebTrade is a hub for web developers to share their passion for building incredible Internet things. Founded by Aditya Garg in 2021, WebTrade is for web professionals, by web professionals: developers, designers, programmers, product creators and entrepreneurs alike.
+<br/>
+We love our rich and engaged community and our contributors, who are truly leaders in their field.</p>
+</td>
+<td>
+	<img src="about.jpg" height="500px" width="700px">
+</td>
+</tr>
+</table>
+</section>
+<br/>
+<br/>
+<br/>
+<footer id="tact">
+	<div class="contact-section">
+		<table>
+			<tr>
+				<td>
+		<div class="contact-info">
+			   <div><i class="fas fa-map-marker-alt" style="color: white;
+			                                                max-width: 500px;
+			                                                line-height: 65px;
+			                                                padding-left: 90px;
+			                                                font-size: 25px;
+			                                                padding-top: 250px;">
+			                                        Adderes, City, Country</i></div>
+			   <div><i class="fas fa-envelope"  style="color: white;
+			                                                max-width: 500px;
+			                                                line-height: 65px;
+			                                                padding-left: 90px;
+			                                                font-size: 25px;">
+			                                        Contact@gmail.com</i></div>
+			   <div><i class="fas fa-phone"  style="color: white;
+			                                                max-width: 500px;
+			                                                line-height: 65px;
+			                                                padding-left: 90px;
+			                                                font-size: 25px;">
+			                                        +00 0000 000 000</i></div>
+			   <div><i class="fas fa-clock"  style="color: white;
+			                                                max-width: 500px;
+			                                                line-height: 65px;
+			                                                padding-left: 90px;
+			                                                font-size: 25px;">
+			                                        Mon - Fri 8:00 AM to 5:00 PM</i></div>
+			</div></td>
+			<td>
+			<div class="contact-form">
+				<table>
+					<tr>
+						<td colspan="2">
+				<p style="color: #fff;
+				          margin-left: 300px;
+				          margin-top: 39px;
+				          font-size: 90px;
+				          font-family: 'Qahiri', sans-serif;">
+					  Contact Us
+				</p>
+			</td></tr>
+				<form>
+                              <tr>
+					<td>
+				<input type="text" name="name" class="text-box" placeholder="Your Name" required></td>
+                               <td>
+				<input type="email" name="email" class="text-box1" placeholder="Your Email" required></td></tr>
+                                 <tr>
+                                 	<td colspan="2">
+				<textarea name="message" class="area-box" rows="5" cols="42" placeholder="Your Message" required></textarea></td></tr>
+				<tr>
+					<td colspan="2">
+				<input type="submit" name="submit" class="send-btn" value="send" 
+				onsubmit="aert()">
+			</td>
+		</tr>
+				</form>
+			</table>
+			</div></td></tr></table>
+		</div>
+	</div>
+</footer>
+<script>
+	function aert() 
+	{
+        alert{"Your request is sended sucessfully."}
+	}
+</script>
+</body>
+</html>
